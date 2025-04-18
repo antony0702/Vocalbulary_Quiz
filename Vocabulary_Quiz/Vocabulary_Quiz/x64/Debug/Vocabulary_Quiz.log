@@ -1,0 +1,3 @@
+﻿  Vocabulary_Quiz.cpp
+C:\Users\anton\OneDrive\桌面\自主學習\Vocabulary_Quiz\Vocabulary_Quiz\Vocabulary_Quiz.cpp(62,19): warning C4244: '引數': 將 'time_t' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
+  Vocabulary_Quiz.vcxproj -> C:\Users\anton\OneDrive\桌面\自主學習\Vocabulary_Quiz\x64\Debug\Vocabulary_Quiz.exe

@@ -51,3 +51,63 @@ apple
 *正確*
 ```
 
+
+# Vocabulary Quiz — Vocabulary Memorization Tool
+
+**Vocabulary Quiz** is a lightweight command‑line vocabulary quiz program written in **C++**.  
+With this tool, you can input any number of English words (or phrases) alongside their Chinese meanings, then choose either **Sequential** or **Random** quiz mode to practice memorization. It’s ideal for learners who want a fast, keyboard‑only flashcard experience.
+
+---
+
+## Features
+
+| Feature                | Description                                                                                       |
+|------------------------|---------------------------------------------------------------------------------------------------|
+| **Large Capacity**     | Global arrays can hold up to **100 000** entries, enough for extensive vocabulary lists.          |
+| **Two Quiz Modes**     | **Sequential** (in input order) or **Random** (shuffled using `rand()` + `time(NULL)`).           |
+| **Phrase Support**     | Use `//` to represent spaces within a phrase (e.g. `take//care`).                                |
+| **Immediate Feedback** | After each answer, displays **Correct** or shows the correct Chinese translation.                 |
+| **Screen Clearing**    | Calls `system("cls")` (Windows) to clear the console between stages, keeping the interface tidy.|
+
+---
+
+## Usage
+
+**Follow the prompts:**  
+1. **Choose quiz mode**: enter `1` for Random mode or `0` for Sequential mode.  
+2. **Enter vocabulary**: type each entry as
+   ```
+   <EnglishWordOrPhrase> <ChineseMeaning>
+   ```
+   - Replace spaces in multi‑word phrases with `//`.  
+   - Enter `##` as the English word to finish the list.  
+3. **Answer the quiz**: the program displays each English prompt; type the exact Chinese meaning (including `//` if used).  
+4. **Review feedback**: you’ll immediately see whether your answer is correct or what the correct translation is.
+
+---
+
+## Example Session (Random Mode)
+
+```text
+Use random quiz? (Chinese prompt: 請問是否要使用隨機出題? Press 1 for Yes, 0 for No)
+1
+
+Enter all words (Chinese prompt: 請輸入所有單字(片語請使用 // 當作空格 輸入##表示結束))
+apple 蘋果
+take//care 保重
+##    (end input)
+
+Start answering (Chinese prompt: 請作答)
+
+take//care
+保重
+
+*Correct* (Chinese output: 正確)
+
+apple
+蘋果
+
+*Correct* (Chinese output: 正確)
+```
+
+
